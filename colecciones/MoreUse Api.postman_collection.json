@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "7c3d7f54-c580-4ac4-995c-2f6c73f2eb30",
+		"name": "MoreUse Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8530042",
+		"_collection_link": "https://restless-firefly-345200.postman.co/workspace/Diplomado_fullstack~edc8b583-f5c6-46e3-9a1c-d726b1d28236/collection/8530042-7c3d7f54-c580-4ac4-995c-2f6c73f2eb30?action=share&creator=8530042&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"homero1@b.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"homero1@b.com\",\r\n    \"password\": \"123456\",\r\n    \"phone\": \"234\",\r\n    \"addresss\": \"calle 10\",\r\n    \"name\": \"Homero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clothes",
+			"item": [
+				{
+					"name": "/addClothe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mameluco\",\r\n    \"target\": \"2 - 4 meses\",\r\n    \"gender\": \"F\",\r\n    \"price\": 25000,\r\n    \"image\": \"https://www.kiwistore.co/3781-large_default/mameluco-mis-papitos-pidieron-un-deseo-y-ya-llegue.jpg\",\r\n    \"description\": \"Mameluco recién nacido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clothes/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothes",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/getDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothes/64723fcf142a3d4aff0427c6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothes",
+								"64723fcf142a3d4aff0427c6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/getAll Publico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/getAll token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clothes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clothes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMyStuff",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
